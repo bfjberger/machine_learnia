@@ -31,8 +31,8 @@
 # tuple_1  = tuple((i**2 for i in range(10)))
 # print(tuple_1)
 
+carre = {
+    str(k):k**2 for k in range(0, 20)
+}
 
-k = [for i in range(20)]
-    k.append()
-
-dico = {k:v for k, v in zip(k, v)}
+print(carre)
