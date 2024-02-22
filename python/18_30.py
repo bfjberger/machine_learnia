@@ -12,4 +12,10 @@ plt.show()
 # if we need to change the time format use : pd.to_datetime('20129/03/20')
 # timestamp('2019-03-20 00:00:00')
 
+# using pandas in python swap two variables
+def swap_variables(a, b):
+    temp = pd.Series(a)
+    a = pd.Series(b)
+    b = pd.Series(temp)
+    return a, b
 
