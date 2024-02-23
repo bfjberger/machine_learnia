@@ -1,3 +1,6 @@
+# https://docs.python.org/3/library/functions.html
+# built-in functions in python 
+
 # x = -3
 # print(abs(x))
 

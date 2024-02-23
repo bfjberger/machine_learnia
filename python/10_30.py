@@ -1,15 +1,17 @@
 import numpy as np
 
-# A = np.array([1, 2, 3])
-
+# A = np.array([1,2,3])
 # print(A)
-# print(A.ndim)
 # print(A.shape)
-# print(A.size)
+# print("A size is:", A.size)
 
-# B  = np.zeros((3, 2))
-# print(B.shape)
-# print(type(B.shape))
+# B = np.zeros((3, 2))
+# print(B)
+# print(type(B))
+
+c = np.ones((3, 4))
+print(c)
+print(type(c))  
 
 # C = np.ones((3, 4))
 # print(C)
@@ -65,9 +67,9 @@ import numpy as np
 
 # print(initialisation(3, 4))
 
-def  initialisation(m, n):
-    X = np.random.randn(m, n)
-    X = np.concatenate((X, np.ones((X.shape[0], 1))), axis = 1)
-    return(X)
+# def  initialisation(m, n):
+#     X = np.random.randn(m, n)
+#     X = np.concatenate((X, np.ones((X.shape[0], 1))), axis = 1)
+#     return(X)
 
-print(initialisation(3, 4))
+# print(initialisation(3, 4))

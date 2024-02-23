@@ -1,3 +1,7 @@
+# python modules 
+# package is a composed by several modules 
+# each modules possses one or more functions
+
 import math
 import random
 import statistics

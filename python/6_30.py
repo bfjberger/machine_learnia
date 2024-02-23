@@ -39,6 +39,13 @@
 # tuple_1  = tuple((i**2 for i in range(10)))
 # print(tuple_1)
 
+# carre = {
+#     str(k):k**2 for k in range(0, 20)
+# }
+
+# print(carre)
+
+
 carre = {
     str(k):k**2 for k in range(0, 20)
 }
