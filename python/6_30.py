@@ -1,3 +1,11 @@
+# list comprehension: is a way to write a for condition in the list itself in order to save TimeoutError
+
+# list = []
+# for i in range(10):
+#     list.append(i**2)
+    
+# list_2 = [i**2 in range(10)]
+
 # list_1 = []
 # for i in range (10):
 #     list_1.append(i**2)

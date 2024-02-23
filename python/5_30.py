@@ -26,21 +26,19 @@
 #     print(k, v)
 
 
-positif:[]
-negatif:[]
-classeur = 
-{
-    'positif',
-    'negatif'
+classeur = {
+    'positif':[],
+    'negatif':[]
 }
 def trier(classeur, nombre):
     if (nombre >= 0):
-        positif.append(nombre)
+        classeur['positif'].append(nombre)
     else:
-        negatif.append(nombre)
-return classeur
+        classeur['negatif'].append(nombre)
+    return classeur
 
-
+trier(classeur, 5)
+print(classeur)
 
 
 
