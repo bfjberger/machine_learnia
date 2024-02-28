@@ -46,19 +46,42 @@ import numpy as np
 # A[A < 5] = 10
 # print(A)
 
+# from scipy import misc
+# import matplotlib.pyplot as plt
+# face = misc.face(gray = True)
+# plt.imshow(face, cmap=plt.cm.gray)
+# plt.show()
+# print(face.shape)
+# h = face.shape[0]
+# w = face.shape[1]
+# # zoom = face[192:576, 256:768]
+# zoom = face[h//4:-h//4, w//4:-w//4]
+# zoom[zoom > 150] = 255
+# plt.imshow(zoom, cmap=plt.cm.gray)
+# plt.show()
+
+# from scipy import misc
+# import matplotlib.pyplot as plt
+# face = misc.face()
+# plt.imshow(face)
+# plt.show()
+# print(type(face))
+# print(face.shape)
+
+# same pict in black and white
+
 from scipy import misc
 import matplotlib.pyplot as plt
 face = misc.face(gray = True)
-plt.imshow(face, cmap=plt.cm.gray)
-plt.show()
-print(face.shape)
 h = face.shape[0]
 w = face.shape[1]
-# zoom = face[192:576, 256:768]
-zoom = face[h//4:-h//4, w//4:-w//4]
-zoom[zoom > 150] = 255
-plt.imshow(zoom, cmap=plt.cm.gray)
+zoom = face[(h//4):((h*3)//4), (w//4):((w*3)//4)]
+# zoom = face[h//4:-h//4, w//4:-w//4]
+zoom[zoom >150] = 255
+plt.imshow(zoom, cmap = plt.cm.gray)
 plt.show()
+
+
 
 
 
