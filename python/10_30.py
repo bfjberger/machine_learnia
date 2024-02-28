@@ -9,9 +9,9 @@ import numpy as np
 # print(B)
 # print(type(B))
 
-c = np.ones((3, 4))
-print(c)
-print(type(c))  
+# c = np.ones((3, 4))
+# print(c)
+# print(type(c))  
 
 # C = np.ones((3, 4))
 # print(C)
@@ -73,3 +73,11 @@ print(type(c))
 #     return(X)
 
 # print(initialisation(3, 4))
+
+def initialisation(m, n):
+    tab = np.random.randn(m, n)
+    biais = np.ones((m, 1))
+    res = np.concatenate((biais, tab), axis = 1)
+    return(res)
+
+print(initialisation(3, 4))

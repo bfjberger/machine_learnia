@@ -5,10 +5,15 @@ import numpy as np
 # print(A[0, 1])
 
 # slicing
+# start index / end index/ path
+# all elements of first line
 # print(A[:, 0])
+# all elements of first colomn
 # print(A[0, :])
-# subsetting
+# all elements of first colomn id working as well
+# print(A[0])
 
+# subsetting = creating a smaller tab from a bigger one
 # B = A[0:2, 0:2]
 # print(B)
 #  changer les values de A
