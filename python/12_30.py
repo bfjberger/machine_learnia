@@ -1,4 +1,4 @@
-import numpy as np
+# import numpy as np
 
 # np.random.seed(0)
 # A = np.random.randint(0, 10, [5, 5])
@@ -16,11 +16,28 @@ import numpy as np
 # for i, j in zip(values[counts.argsort()], counts[counts.argsort()]):
 #     print(f'valeur {i} apparait {j}')
 
+# np.random.seed(0)
+# A = np.random.randint(0, 100, [10, 5])
+# print(A)
+# D = (A - A.mean(axis = 0)) / A.std(axis=0)
+# print(D)
+
+import numpy as np
+
+# np.random.seed(0)
+# A = np.random.randint(0, 10, [2,3])
+# print(A)
+# print(A.sum(axis=1))
+
+
+# normalisation (standardization), which is A-average(A)/std dev(A)
 np.random.seed(0)
 A = np.random.randint(0, 100, [10, 5])
+res = (A - A.mean(axis = 0))/A.std(axis = 0)
 print(A)
-D = (A - A.mean(axis = 0)) / A.std(axis=0)
-print(D)
+print(res)
+
+
 
 
 
