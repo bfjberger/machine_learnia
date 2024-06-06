@@ -19,13 +19,22 @@
 # f = lambda x, y: x**2 + y
 # print(f(2, 1))
 
-def e_pot(masse, hauteur, e_limite, g = 9.81):
-    E = masse * hauteur * g
-    if (E <= e_limite):
-        print(E, "joules")
-    return E
+# def e_pot(masse, hauteur, e_limite, g = 9.81):
+#     E = masse * hauteur * g
+#     if (E <= e_limite):
+#         print(E, "joules")
+#     return E
 
-e_pot(80, 5, 4000, 9.81)
+# e_pot(80, 5, 4000, 9.81)
 
-        
 
+
+def e_pot(masse, hauteur, e_lim, g):
+    E = masse*hauteur*g        
+    if (E < e_lim):
+        print(E)
+    return (0)
+
+e_pot(80, 5, 25000, 9.81)
+
+    

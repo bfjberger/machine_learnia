@@ -51,24 +51,50 @@
 #     print(parametres["W{}".format(i)])
 
 
-f = open('fichier.txt', 'w')
-f.write('bonjour')
-f.close()
+# f = open('fichier.txt', 'w')
+# f.write('bonjour')
+# f.close()
 
-f = open('fichier.txt', 'r')
-print(f.read())
-f.close()
+# f = open('fichier.txt', 'r')
+# print(f.read())
+# f.close()
+
+# with open('fichier.txt', 'w') as f:
+#     for i in range(10):
+#         f.write("{}^2 = {}\n".format(i, i**2))
+
+# with open('fichier.txt', 'r') as f:
+#     liste = f.read().splitlines()
+#     print(liste)
+
+# liste = [line for line in open('fichier.txt', 'r')]
+# print(liste)
+
+# liste = [line.strip() for line in open('fichier.txt', 'r')]
+# print(liste)
+
+# x = int(input("Please enter a number\n"))
+# y = input("Please enter a city name\n")
+
+# message = "The number written is {} and the city name is {}".format(x, y)
+# print(message)
+
+
+# with open('fichier.txt', 'w') as f:
+#     for i in range(10):
+#         f.write("{}^2 = {}\n".format(i, i**2))
+
+# with open('fichier.txt', 'r') as f:
+#     list_file = []
+#     for line in f:
+#         list_file.append(line.strip())
+# print(list_file)
 
 with open('fichier.txt', 'w') as f:
     for i in range(10):
         f.write("{}^2 = {}\n".format(i, i**2))
 
 with open('fichier.txt', 'r') as f:
-    liste = f.read().splitlines()
-    print(liste)
-
-liste = [line for line in open('fichier.txt', 'r')]
-print(liste)
-
-liste = [line.strip() for line in open('fichier.txt', 'r')]
-print(liste)
+    list_file = []
+    list_file = f.readlines()
+print(list_file)

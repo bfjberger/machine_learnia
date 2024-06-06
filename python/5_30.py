@@ -26,19 +26,19 @@
 #     print(k, v)
 
 
-classeur = {
-    'positif':[],
-    'negatif':[]
-}
-def trier(classeur, nombre):
-    if (nombre >= 0):
-        classeur['positif'].append(nombre)
-    else:
-        classeur['negatif'].append(nombre)
-    return classeur
+# classeur = {
+#     'positif':[],
+#     'negatif':[]
+# }
+# def trier(classeur, nombre):
+#     if (nombre >= 0):
+#         classeur['positif'].append(nombre)
+#     else:
+#         classeur['negatif'].append(nombre)
+#     return classeur
 
-trier(classeur, 5)
-print(classeur)
+# trier(classeur, 5)
+# print(classeur)
 
 
 
@@ -79,19 +79,37 @@ print(classeur)
 # for k, v in inventaire.items():
 #     print(k, v)
 
+# classeur = {
+#     "positif":[],
+#     "negatif":[],
+# }
+
+# def trier(classeur, nombre):
+#     if (nombre >= 0):
+#         classeur['positif'].append(nombre)
+#     else:
+#         classeur['negatif'].append(nombre)
+#     print(classeur['positif'])
+#     print(classeur['negatif'])
+
+#     return classeur
+
+# trier(classeur, -5)
+
 classeur = {
-    "positif":[],
-    "negatif":[],
+    "positif": [],
+    "negatif": []
 }
 
-def trier(classeur, nombre):
-    if (nombre >= 0):
+def trier (classeur, nombre):
+    if nombre >= 0:
         classeur['positif'].append(nombre)
     else:
         classeur['negatif'].append(nombre)
-    print(classeur['positif'])
-    print(classeur['negatif'])
-
     return classeur
+    
+trier(classeur, 5)
+trier(classeur, 10)
+trier(classeur, -3)
 
-trier(classeur, -5)
+print(classeur)

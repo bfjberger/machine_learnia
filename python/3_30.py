@@ -12,18 +12,19 @@
 # for i in range(4):
 #     print('hello')
 
-def fibo(n):
-    a = 0
-    b = 1
-    while(a < n):
-        print(a)
-        a, b = b, a+b
+# def fibo(n):
+#     a = 0
+#     b = 1
+#     while(a < n):
+#         print(a)
+#         a, b = b, a+b
 
-fibo(5)
+# a = b et b = a+b
+# fibo(5)
 
-def fibo2(n):
-    for i in range(0, n, n+1):
-        print(i)
+# def fibo2(n):
+#     for i in range(0, n, n+1):
+#         print(i)
         
 
 # def sign(x):
@@ -42,12 +43,14 @@ def fibo2(n):
 #     print(i)
 #     sign(i)    
     
-# def fibo(n):
-#     a = 0
-#     b = 1
-#     while (a < n):
-#         print(a)
-#         a, b = b, a+b
-        
-        
-# fibo(5)
+def fibo(n):
+    a = 0
+    b = 1
+    while (a < n):
+        print(a)
+        a, b = b, a+b
+
+# Updates a and b simultaneously using tuple unpacking: a, b = b, a + b.
+# This means a takes the old value of b, and b takes the value of a + b.
+     
+fibo(5)
